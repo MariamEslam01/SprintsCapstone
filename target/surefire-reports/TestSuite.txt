@@ -1,0 +1,39 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 60.324 s <<< FAILURE! - in TestSuite
+testAddAndRemoveProduct(com.demoBlaze.tests.ShoppingCartTest)  Time elapsed: 10.338 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#cartur"}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6b12854859f542dbd05ab6b1c42aba5d, findElement {using=id, value=cartur}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\maria\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53972}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53972/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6b12854859f542dbd05ab6b1c42aba5d
+	at com.demoBlaze.tests.ShoppingCartTest.removeItemFromCart(ShoppingCartTest.java:53)
+	at com.demoBlaze.tests.ShoppingCartTest.testAddAndRemoveProduct(ShoppingCartTest.java:76)
+
+testBrowserBackButtonAfterLogout(com.demoBlaze.tests.LogoutTest)  Time elapsed: 4.051 s  <<< FAILURE!
+java.lang.AssertionError: ❌ User re-logged in after pressing back button! expected [true] but found [false]
+	at com.demoBlaze.tests.LogoutTest.testBrowserBackButtonAfterLogout(LogoutTest.java:62)
+
+testCartIsClearedAfterLogout(com.demoBlaze.tests.LogoutTest)  Time elapsed: 12.229 s  <<< FAILURE!
+java.lang.AssertionError: ❌ Cart still has items after logout! expected [true] but found [false]
+	at com.demoBlaze.tests.LogoutTest.testCartIsClearedAfterLogout(LogoutTest.java:85)
+
+testLogoutWithoutActiveSession(com.demoBlaze.tests.LogoutTest)  Time elapsed: 0.065 s  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=133.0.6943.127)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [feccf68b3036696b555bd1db8a7c05a0, clickElement {id=f.25D19CEC1A6C06FB5D4949B852DB77A4.d.FEA7A434C98F048443981B33BF010BB2.e.1077}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\maria\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53994}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53994/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (feccf68b3036696b555bd1db8a7c05a0)] -> id: logout2]
+Session ID: feccf68b3036696b555bd1db8a7c05a0
+	at com.demoBlaze.tests.LogoutTest.testLogoutWithoutActiveSession(LogoutTest.java:123)
+

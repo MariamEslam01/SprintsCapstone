@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">DemoBlazeSuite</th></tr>
+<tr><td><a href="#t0">User Registration Test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">21,550</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Shopping Cart Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">14,531</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Logout Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">23,799</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">11</th><th class="num">0</th><th class="num">0</th><th class="num attn">4</th><th class="num">59,880</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">DemoBlazeSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">User Registration Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="9">com.demoBlaze.tests.RegisterTest</td><td><a href="#m0">testAutoLoginAfterSignup</a></td><td rowspan="1">1740268326893</td><td rowspan="1">3757</td></tr><tr class="passedeven"><td><a href="#m1">testEmptyName</a></td><td rowspan="1">1740268318388</td><td rowspan="1">830</td></tr><tr class="passedeven"><td><a href="#m2">testLogoutAndLoginPersistence</a></td><td rowspan="1">1740268330652</td><td rowspan="1">4371</td></tr><tr class="passedeven"><td><a href="#m3">testLongName</a></td><td rowspan="1">1740268323163</td><td rowspan="1">1860</td></tr><tr class="passedeven"><td><a href="#m4">testNameWithNumbers</a></td><td rowspan="1">1740268320523</td><td rowspan="1">1319</td></tr><tr class="passedeven"><td><a href="#m5">testNameWithSpecialCharacters</a></td><td rowspan="1">1740268321843</td><td rowspan="1">1319</td></tr><tr class="passedeven"><td><a href="#m6">testSingleCharacterName</a></td><td rowspan="1">1740268319219</td><td rowspan="1">1303</td></tr><tr class="passedeven"><td><a href="#m7">testTrimmedSpacesInName</a></td><td rowspan="1">1740268325024</td><td rowspan="1">1868</td></tr><tr class="passedeven"><td><a href="#m8">testValidSignup</a></td><td rowspan="1">1740268314902</td><td rowspan="1">3485</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Shopping Cart Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.demoBlaze.tests.ShoppingCartTest</td><td><a href="#m9">testAddAndRemoveProduct</a></td><td rowspan="1">1740268335859</td><td rowspan="1">10334</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Logout Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.demoBlaze.tests.LogoutTest</td><td><a href="#m10">testBrowserBackButtonAfterLogout</a></td><td rowspan="1">1740268354851</td><td rowspan="1">4051</td></tr><tr class="failedeven"><td><a href="#m11">testCartIsClearedAfterLogout</a></td><td rowspan="1">1740268358902</td><td rowspan="1">12228</td></tr><tr class="failedeven"><td><a href="#m12">testLogoutWithoutActiveSession</a></td><td rowspan="1">1740268373303</td><td rowspan="1">65</td></tr><tr><th colspan="4">Logout Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.demoBlaze.tests.LogoutTest</td><td><a href="#m13">testMultipleLoginsInvalidatedAfterLogout</a></td><td rowspan="1">1740268371131</td><td rowspan="1">2172</td></tr><tr class="passedeven"><td><a href="#m14">testSuccessfulLogout</a></td><td rowspan="1">1740268350425</td><td rowspan="1">4424</td></tr></tbody>
+</table>
+<h2>User Registration Test</h2><h3 id="m0">com.demoBlaze.tests.RegisterTest#testAutoLoginAfterSignup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.demoBlaze.tests.RegisterTest#testEmptyName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.demoBlaze.tests.RegisterTest#testLogoutAndLoginPersistence</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.demoBlaze.tests.RegisterTest#testLongName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.demoBlaze.tests.RegisterTest#testNameWithNumbers</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.demoBlaze.tests.RegisterTest#testNameWithSpecialCharacters</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.demoBlaze.tests.RegisterTest#testSingleCharacterName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.demoBlaze.tests.RegisterTest#testTrimmedSpacesInName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.demoBlaze.tests.RegisterTest#testValidSignup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Shopping Cart Test</h2><h3 id="m9">com.demoBlaze.tests.ShoppingCartTest#testAddAndRemoveProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#cartur&quot;}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6b12854859f542dbd05ab6b1c42aba5d, findElement {using=id, value=cartur}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\maria\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53972}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53972/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6b12854859f542dbd05ab6b1c42aba5d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at com.demoBlaze.tests.ShoppingCartTest.removeItemFromCart(ShoppingCartTest.java:53)
+	at com.demoBlaze.tests.ShoppingCartTest.testAddAndRemoveProduct(ShoppingCartTest.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Logout Test</h2><h3 id="m10">com.demoBlaze.tests.LogoutTest#testBrowserBackButtonAfterLogout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: ❌ User re-logged in after pressing back button! expected [true] but found [false]
+	at com.demoBlaze.tests.LogoutTest.testBrowserBackButtonAfterLogout(LogoutTest.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.demoBlaze.tests.LogoutTest#testCartIsClearedAfterLogout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: ❌ Cart still has items after logout! expected [true] but found [false]
+	at com.demoBlaze.tests.LogoutTest.testCartIsClearedAfterLogout(LogoutTest.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.demoBlaze.tests.LogoutTest#testLogoutWithoutActiveSession</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=133.0.6943.127)
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [feccf68b3036696b555bd1db8a7c05a0, clickElement {id=f.25D19CEC1A6C06FB5D4949B852DB77A4.d.FEA7A434C98F048443981B33BF010BB2.e.1077}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\maria\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53994}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53994/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (feccf68b3036696b555bd1db8a7c05a0)] -&gt; id: logout2]
+Session ID: feccf68b3036696b555bd1db8a7c05a0
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.demoBlaze.tests.LogoutTest.testLogoutWithoutActiveSession(LogoutTest.java:123)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.demoBlaze.tests.LogoutTest#testMultipleLoginsInvalidatedAfterLogout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.demoBlaze.tests.LogoutTest#testSuccessfulLogout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

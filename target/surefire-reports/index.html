@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-DemoBlazeSuite" class="navigator-link">
+              <span class="suite-name border-failed">DemoBlazeSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-DemoBlazeSuite" class="navigator-link ">
+                    <span>C:\Projects\DemoBlazeAutomation\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-DemoBlazeSuite" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-DemoBlazeSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-DemoBlazeSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-DemoBlazeSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-DemoBlazeSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-DemoBlazeSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">15 methods, 4 failed,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-DemoBlazeSuite" class="hide-methods failed suite-DemoBlazeSuite"> (hide)</a> <!-- hide-methods failed suite-DemoBlazeSuite -->
+                      <a href="#" panel-name="suite-DemoBlazeSuite" class="show-methods failed suite-DemoBlazeSuite"> (show)</a> <!-- show-methods failed suite-DemoBlazeSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-DemoBlazeSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoBlazeSuite" title="com.demoBlaze.tests.ShoppingCartTest" class="method navigator-link" hash-for-method="testAddAndRemoveProduct">testAddAndRemoveProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoBlazeSuite" title="com.demoBlaze.tests.LogoutTest" class="method navigator-link" hash-for-method="testBrowserBackButtonAfterLogout">testBrowserBackButtonAfterLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoBlazeSuite" title="com.demoBlaze.tests.LogoutTest" class="method navigator-link" hash-for-method="testCartIsClearedAfterLogout">testCartIsClearedAfterLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoBlazeSuite" title="com.demoBlaze.tests.LogoutTest" class="method navigator-link" hash-for-method="testLogoutWithoutActiveSession">testLogoutWithoutActiveSession</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-DemoBlazeSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-DemoBlazeSuite" class="hide-methods passed suite-DemoBlazeSuite"> (hide)</a> <!-- hide-methods passed suite-DemoBlazeSuite -->
+                      <a href="#" panel-name="suite-DemoBlazeSuite" class="show-methods passed suite-DemoBlazeSuite"> (show)</a> <!-- show-methods passed suite-DemoBlazeSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-DemoBlazeSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoBlazeSuite" title="com.demoBlaze.tests.RegisterTest" class="method navigator-link" hash-for-method="testAutoLoginAfterSignup">testAutoLoginAfterSignup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoBlazeSuite" title="com.demoBlaze.tests.RegisterTest" class="method navigator-link" hash-for-method="testEmptyName">testEmptyName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoBlazeSuite" title="com.demoBlaze.tests.RegisterTest" class="method navigator-link" hash-for-method="testLogoutAndLoginPersistence">testLogoutAndLoginPersistence</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoBlazeSuite" title="com.demoBlaze.tests.RegisterTest" class="method navigator-link" hash-for-method="testLongName">testLongName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoBlazeSuite" title="com.demoBlaze.tests.LogoutTest" class="method navigator-link" hash-for-method="testMultipleLoginsInvalidatedAfterLogout">testMultipleLoginsInvalidatedAfterLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoBlazeSuite" title="com.demoBlaze.tests.RegisterTest" class="method navigator-link" hash-for-method="testNameWithNumbers">testNameWithNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoBlazeSuite" title="com.demoBlaze.tests.RegisterTest" class="method navigator-link" hash-for-method="testNameWithSpecialCharacters">testNameWithSpecialCharacters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoBlazeSuite" title="com.demoBlaze.tests.RegisterTest" class="method navigator-link" hash-for-method="testSingleCharacterName">testSingleCharacterName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoBlazeSuite" title="com.demoBlaze.tests.LogoutTest" class="method navigator-link" hash-for-method="testSuccessfulLogout">testSuccessfulLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoBlazeSuite" title="com.demoBlaze.tests.RegisterTest" class="method navigator-link" hash-for-method="testTrimmedSpacesInName">testTrimmedSpacesInName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoBlazeSuite" title="com.demoBlaze.tests.RegisterTest" class="method navigator-link" hash-for-method="testValidSignup">testValidSignup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-DemoBlazeSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-DemoBlazeSuite" class="panel DemoBlazeSuite">
+          <div class="suite-DemoBlazeSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.demoBlaze.tests.LogoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBrowserBackButtonAfterLogout">
+                  </a> <!-- testBrowserBackButtonAfterLogout -->
+                  <span class="method-name">testBrowserBackButtonAfterLogout</span>
+                  <div class="stack-trace">java.lang.AssertionError: ❌ User re-logged in after pressing back button! expected [true] but found [false]
+	at com.demoBlaze.tests.LogoutTest.testBrowserBackButtonAfterLogout(LogoutTest.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCartIsClearedAfterLogout">
+                  </a> <!-- testCartIsClearedAfterLogout -->
+                  <span class="method-name">testCartIsClearedAfterLogout</span>
+                  <div class="stack-trace">java.lang.AssertionError: ❌ Cart still has items after logout! expected [true] but found [false]
+	at com.demoBlaze.tests.LogoutTest.testCartIsClearedAfterLogout(LogoutTest.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogoutWithoutActiveSession">
+                  </a> <!-- testLogoutWithoutActiveSession -->
+                  <span class="method-name">testLogoutWithoutActiveSession</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=133.0.6943.127)
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [feccf68b3036696b555bd1db8a7c05a0, clickElement {id=f.25D19CEC1A6C06FB5D4949B852DB77A4.d.FEA7A434C98F048443981B33BF010BB2.e.1077}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\maria\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53994}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53994/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (feccf68b3036696b555bd1db8a7c05a0)] -&gt; id: logout2]
+Session ID: feccf68b3036696b555bd1db8a7c05a0
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.demoBlaze.tests.LogoutTest.testLogoutWithoutActiveSession(LogoutTest.java:123)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DemoBlazeSuite-class-failed -->
+          <div class="suite-DemoBlazeSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.demoBlaze.tests.ShoppingCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddAndRemoveProduct">
+                  </a> <!-- testAddAndRemoveProduct -->
+                  <span class="method-name">testAddAndRemoveProduct</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#cartur&quot;}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6b12854859f542dbd05ab6b1c42aba5d, findElement {using=id, value=cartur}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\maria\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53972}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53972/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6b12854859f542dbd05ab6b1c42aba5d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at com.demoBlaze.tests.ShoppingCartTest.removeItemFromCart(ShoppingCartTest.java:53)
+	at com.demoBlaze.tests.ShoppingCartTest.testAddAndRemoveProduct(ShoppingCartTest.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DemoBlazeSuite-class-failed -->
+          <div class="suite-DemoBlazeSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.demoBlaze.tests.LogoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMultipleLoginsInvalidatedAfterLogout">
+                  </a> <!-- testMultipleLoginsInvalidatedAfterLogout -->
+                  <span class="method-name">testMultipleLoginsInvalidatedAfterLogout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulLogout">
+                  </a> <!-- testSuccessfulLogout -->
+                  <span class="method-name">testSuccessfulLogout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DemoBlazeSuite-class-passed -->
+          <div class="suite-DemoBlazeSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.demoBlaze.tests.RegisterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAutoLoginAfterSignup">
+                  </a> <!-- testAutoLoginAfterSignup -->
+                  <span class="method-name">testAutoLoginAfterSignup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmptyName">
+                  </a> <!-- testEmptyName -->
+                  <span class="method-name">testEmptyName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogoutAndLoginPersistence">
+                  </a> <!-- testLogoutAndLoginPersistence -->
+                  <span class="method-name">testLogoutAndLoginPersistence</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLongName">
+                  </a> <!-- testLongName -->
+                  <span class="method-name">testLongName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNameWithNumbers">
+                  </a> <!-- testNameWithNumbers -->
+                  <span class="method-name">testNameWithNumbers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNameWithSpecialCharacters">
+                  </a> <!-- testNameWithSpecialCharacters -->
+                  <span class="method-name">testNameWithSpecialCharacters</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSingleCharacterName">
+                  </a> <!-- testSingleCharacterName -->
+                  <span class="method-name">testSingleCharacterName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTrimmedSpacesInName">
+                  </a> <!-- testTrimmedSpacesInName -->
+                  <span class="method-name">testTrimmedSpacesInName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidSignup">
+                  </a> <!-- testValidSignup -->
+                  <span class="method-name">testValidSignup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DemoBlazeSuite-class-passed -->
+        </div> <!-- panel DemoBlazeSuite -->
+        <div panel-name="test-xml-DemoBlazeSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Projects\DemoBlazeAutomation\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;DemoBlazeSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;User Registration Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.demoBlaze.tests.RegisterTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- User Registration Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Shopping Cart Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.demoBlaze.tests.ShoppingCartTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Shopping Cart Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Logout Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.demoBlaze.tests.LogoutTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Logout Test --&gt;
+&lt;/suite&gt; &lt;!-- DemoBlazeSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-DemoBlazeSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for DemoBlazeSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">User Registration Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Shopping Cart Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Logout Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-DemoBlazeSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for DemoBlazeSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-DemoBlazeSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for DemoBlazeSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_DemoBlazeSuite');
+function tableData_DemoBlazeSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(15);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testCartIsClearedAfterLogout')
+data.setCell(0, 2, 'com.demoBlaze.tests.LogoutTest')
+data.setCell(0, 3, 12228);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testAddAndRemoveProduct')
+data.setCell(1, 2, 'com.demoBlaze.tests.ShoppingCartTest')
+data.setCell(1, 3, 10334);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testSuccessfulLogout')
+data.setCell(2, 2, 'com.demoBlaze.tests.LogoutTest')
+data.setCell(2, 3, 4424);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testLogoutAndLoginPersistence')
+data.setCell(3, 2, 'com.demoBlaze.tests.RegisterTest')
+data.setCell(3, 3, 4371);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testBrowserBackButtonAfterLogout')
+data.setCell(4, 2, 'com.demoBlaze.tests.LogoutTest')
+data.setCell(4, 3, 4051);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testAutoLoginAfterSignup')
+data.setCell(5, 2, 'com.demoBlaze.tests.RegisterTest')
+data.setCell(5, 3, 3757);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testValidSignup')
+data.setCell(6, 2, 'com.demoBlaze.tests.RegisterTest')
+data.setCell(6, 3, 3485);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testMultipleLoginsInvalidatedAfterLogout')
+data.setCell(7, 2, 'com.demoBlaze.tests.LogoutTest')
+data.setCell(7, 3, 2172);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testTrimmedSpacesInName')
+data.setCell(8, 2, 'com.demoBlaze.tests.RegisterTest')
+data.setCell(8, 3, 1868);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testLongName')
+data.setCell(9, 2, 'com.demoBlaze.tests.RegisterTest')
+data.setCell(9, 3, 1860);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testNameWithNumbers')
+data.setCell(10, 2, 'com.demoBlaze.tests.RegisterTest')
+data.setCell(10, 3, 1319);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testNameWithSpecialCharacters')
+data.setCell(11, 2, 'com.demoBlaze.tests.RegisterTest')
+data.setCell(11, 3, 1319);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testSingleCharacterName')
+data.setCell(12, 2, 'com.demoBlaze.tests.RegisterTest')
+data.setCell(12, 3, 1303);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testEmptyName')
+data.setCell(13, 2, 'com.demoBlaze.tests.RegisterTest')
+data.setCell(13, 3, 830);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testLogoutWithoutActiveSession')
+data.setCell(14, 2, 'com.demoBlaze.tests.LogoutTest')
+data.setCell(14, 3, 65);
+window.suiteTableData['DemoBlazeSuite']= { tableData: data, tableDiv: 'times-div-DemoBlazeSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 53 seconds</span>
+              <div id="times-div-DemoBlazeSuite">
+              </div> <!-- times-div-DemoBlazeSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-DemoBlazeSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for DemoBlazeSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-DemoBlazeSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-DemoBlazeSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demoBlaze.tests.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testValidSignup</span>
+                <span class="method-start">1279 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEmptyName</span>
+                <span class="method-start">4765 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSingleCharacterName</span>
+                <span class="method-start">5596 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNameWithNumbers</span>
+                <span class="method-start">6900 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNameWithSpecialCharacters</span>
+                <span class="method-start">8220 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLongName</span>
+                <span class="method-start">9540 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testTrimmedSpacesInName</span>
+                <span class="method-start">11401 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAutoLoginAfterSignup</span>
+                <span class="method-start">13270 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogoutAndLoginPersistence</span>
+                <span class="method-start">17029 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">21401 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demoBlaze.tests.ShoppingCartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">21553 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testAddAndRemoveProduct</span>
+                <span class="method-start">22236 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">32575 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demoBlaze.tests.LogoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">36094 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testSuccessfulLogout</span>
+                <span class="method-start">36802 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testBrowserBackButtonAfterLogout</span>
+                <span class="method-start">41228 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCartIsClearedAfterLogout</span>
+                <span class="method-start">45279 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMultipleLoginsInvalidatedAfterLogout</span>
+                <span class="method-start">57508 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogoutWithoutActiveSession</span>
+                <span class="method-start">59680 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">59746 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
