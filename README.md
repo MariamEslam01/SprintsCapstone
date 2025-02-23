@@ -10,7 +10,6 @@ DemoBlazeAutomation is a Test Automation Framework designed to automate test cas
 
 Functionality
 - **User Registration**: Automates the sign-up process to validate user creation.
-- **User Login**: Ensures users can log in with valid credentials.
 - **Logout**: Verifies that users can successfully log out.
 - **Shopping Cart Operations**: Tests adding and removing items from the cart.
 
